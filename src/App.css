@@ -1,0 +1,96 @@
+/* App.css */
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+/* About section */
+.about-section {
+  margin-bottom: 40px;
+}
+
+/* Product grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Product card */
+.product-card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.product-card:hover img {
+  filter: brightness(80%);
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-info h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.product-info p {
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+}
